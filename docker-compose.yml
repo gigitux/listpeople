@@ -1,0 +1,24 @@
+version: '3.1'
+
+networks:
+  listpeople:
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: server.dockerfile
+    ports:
+      - 3333:3333
+    networks:
+      - listpeople
+  app:
+    build:
+      context: .
+      dockerfile: client.dockerfile
+    stdin_open: true # docker run -i
+    tty: true
+    ports:
+      - 4200:4200
+    networks:
+      - listpeople

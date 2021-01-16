@@ -1,0 +1,14 @@
+.card-container {
+  position: sticky;
+  top: 0;
+  height: 300px;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.info {
+  font-weight: bold;
+}
