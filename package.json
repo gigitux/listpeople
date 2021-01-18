@@ -10,7 +10,7 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "lint": "nx workspace-lint && nx lint",
+    "lint": "nx run-many --all --target=lint",
     "e2e": "nx serve listpeople-be & nx e2e listpeople-fe-e2e",
     "build-fe": "nx build listpeople-fe",
     "start-fe": "nx serve listpeople-fe",

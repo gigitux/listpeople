@@ -8,6 +8,6 @@ describe('listpeople-fe', () => {
   it('should click on row and display right value', () => {
     cy.get('.list-group-item').first().click();
 
-    cy.get('.card-title').contains('Antonin McGaherna');
+    cy.get('.card-title').contains('Antonin McGahern');
   });
 });
