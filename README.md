@@ -15,7 +15,6 @@ or use docker-compose with:
 
 ```
 docker-compose up --build
-
 ```
 
 ## Running unit tests
